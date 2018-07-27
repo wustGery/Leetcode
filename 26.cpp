@@ -1,7 +1,7 @@
-class Solution 
+class Solution
 {
 public:
-    int removeDuplicates(vector<int>& nums) 
+    int removeDuplicates(vector<int>& nums)
     {
         if(nums.size()==0)  return 0;
         vector<int>::iterator iter = nums.begin();
@@ -12,7 +12,7 @@ public:
             int value = *iter;
             if(value==pre_value)
                 nums.erase(iter);
-            else 
+            else
             {
                 pre_value = value;
                 ++iter;
@@ -20,4 +20,5 @@ public:
         }
         return nums.size();
     }
+
 };
