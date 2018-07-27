@@ -1,4 +1,4 @@
-class Solution 
+class Solution
 {
 public:
     void getNext(string p,int *next)
@@ -32,8 +32,9 @@ public:
         }
         return j==p_len?i-j:-1;
     }
-    
-    int strStr(string haystack, string needle) 
+
+
+    int strStr(string haystack, string needle)
     {
         int needle_len = needle.length();
         int *next = new int[needle_len];
